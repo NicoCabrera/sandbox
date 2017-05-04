@@ -13,3 +13,4 @@ Router: La navegación entre componentes. (Login?)
 Otras:
 -Cargar imagenes con [src]: Directiva de Angular. Cargar las imagenes con ésta propiedad.
 -Realizar un insert por GET.
+
