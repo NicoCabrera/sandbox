@@ -1,0 +1,15 @@
+﻿Repasar para el parcial:
+
+smart-table: descargar el modulo, el tag, las propiedades, cargarlo con un array, cargarlo desde un servicio (Http toPromise), ABM, eventos. LocalDataSource.
+
+servicios: cómo generarlos con el angular-cli, cómo inyectarlos y consumirlos.[OK]
+
+@angular/http: Las clases Http y Response. Del módulo RxJS el operador toPromise y los callbacks then y catch.[Ok]
+
+Directivas Angular: *ngIf, *ngFor (con las posibles variables locales como 'index', par o impar, etc), *ngStyle.
+
+Router: La navegación entre componentes. (Login?)
+
+Otras:
+-Cargar imagenes con [src]: Directiva de Angular. Cargar las imagenes con ésta propiedad.
+-Realizar un insert por GET.
