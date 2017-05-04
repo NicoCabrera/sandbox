@@ -4,7 +4,7 @@ Hay que importar:
 ```sh
  import { RouterModule, Routes } from '@angular/router';
 ```
-`Routers` es un array de objetos que implementen la interfaz `Route`. Los objetos que creemos en ese array deben contar por lo menos con dos propiedades: path y component.
+`Routes` es un array de objetos que implementen la interfaz `Route`. Los objetos que creemos en ese array deben contar por lo menos con dos propiedades: path y component.
 En el módulo declaramos una constante con las rutas. Ej:
 ```sh
 const appRoutes: Routes = [

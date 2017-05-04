@@ -1,3 +1,17 @@
-<h1>
+<h1 [hidden]="hidden">
   {{title}}
 </h1>
+<p *ngIf="unknow">This text will never be revealed.</p>
+<button (click)="changeValue()">Mostrar/Ocultar título</button>
+<div padding></div>
+<button *ngFor="let number of numbers">{{number}}</button>Show value
+<div padding></div>
+<button *ngFor="let number of numbers; let i = index">{{i}}</button>Show index
+<div padding></div>
+<button *ngFor="let number of numbers; let f = first">{{f}}</button>Show is first
+<div padding></div>
+<button *ngFor="let number of numbers; let l = last">{{l}}</button>Show is last
+<div padding></div>
+<button *ngFor="let number of numbers; let e = even">{{e}}</button>Show is even
+<div padding></div>
+<button *ngFor="let number of numbers; let o = even">{{o}}</button>Show is odd

@@ -1,28 +1,25 @@
-# BuildInAngularDirectives
+# Build-in-directives
+Las directivas que veremos a continuación son las más utilizadas: *ngIf, *ngFor, *ngStyle.
+El asterisco delante de la directiva es parte de una sintaxis válida para la utilización de las mismas, y significa que el comportamiento abarcará tanto al elemento como a sus elementos hijos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+# ngIf
+Se utiliza para mostrar un elemento de acuerdo a si la expresión es verdadera.
+```sh
+<div *ngIf="hero" >{{hero.name}}</div>
+```
+Si existe el nombre entonces se visualiza.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# ngFor
+Sirve para repetir el elemento tantas veces como ocurrencias haya en el modelo.Ej.
+```sh
+<ul>
+  <li *ngFor="let hero of heroes">{{hero.name}}</li>
+</ul>
+```
+Esta directiva permite la declaración de variables locales que pueden ser útiles.
+Ellas son:
+- index 
+- first 
+- last 
+- even 
+- odd 
