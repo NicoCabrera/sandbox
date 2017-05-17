@@ -1,0 +1,22 @@
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">
+        Red
+    </div>
+    <div *ngSwitchCase="'blue'">
+        Blue
+    </div>
+    <div *ngSwitchCase="'orange'">
+        Orange
+    </div>
+    <div *ngSwitchDefault>...</div>
+</div>
+<label>What color?</label>
+<div class="radio">
+    <label><input type="radio" [(ngModel)]="color" name="color" value="blue">Blue</label>
+</div>
+<div class="radio">
+    <label><input type="radio" [(ngModel)]="color" name="color" value="red">Red</label>
+</div>
+<div class="radio">
+    <label><input type="radio" [(ngModel)]="color" name="color" value="orange">Orange</label>
+</div>

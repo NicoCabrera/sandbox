@@ -1,0 +1,12 @@
+<div *ngIf="hide">
+  <label>ng-if works!</label>
+</div>
+<button (click)="clickMe()">ClickMe</button>
+
+<div>
+  <label>Else example</label>
+  <div>
+    <div *ngIf="data; else noDataTemplate">Hola que tal!</div>
+    <button (click)="clickIfElse()">Show IF/Else</button>
+  </div>
+</div>

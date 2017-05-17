@@ -1,17 +1,13 @@
-<h1 [hidden]="hidden">
-  {{title}}
-</h1>
-<p *ngIf="unknow">This text will never be revealed.</p>
-<button (click)="changeValue()">Mostrar/Ocultar título</button>
-<div padding></div>
-<button *ngFor="let number of numbers">{{number}}</button>Show value
-<div padding></div>
-<button *ngFor="let number of numbers; let i = index">{{i}}</button>Show index
-<div padding></div>
-<button *ngFor="let number of numbers; let f = first">{{f}}</button>Show is first
-<div padding></div>
-<button *ngFor="let number of numbers; let l = last">{{l}}</button>Show is last
-<div padding></div>
-<button *ngFor="let number of numbers; let e = even">{{e}}</button>Show is even
-<div padding></div>
-<button *ngFor="let number of numbers; let o = even">{{o}}</button>Show is odd
+<div class="container">
+  <h1>
+    {{title}}
+  </h1>
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a routerLink="/ngFor">ngFor</a></li>
+    <li role="presentation"><a routerLink="/ngIf">ngIf</a></li>
+    <li role="presentation"><a routerLink="/ngStyle">ngStyle</a></li>
+    <li role="presentation"><a routerLink="/ngClass">ngClass</a></li>
+    <li role="presentation"><a routerLink="/ngSwitch">ngSwitch</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>

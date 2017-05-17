@@ -1,0 +1,20 @@
+<h1 [ngStyle]="{color:color, 'background-color': backcolor}">
+  ng-style works!
+</h1>
+<label>What color?</label>
+<div class="radio">
+  <label><input type="radio" [(ngModel)]="color" name="color" value="blue">Blue</label>
+</div>
+<div class="radio">
+  <label><input type="radio" [(ngModel)]="color" name="color" value="red">Red</label>
+</div>
+<label>What background?</label>
+<div class="radio">
+  <label><input type="radio" [(ngModel)]="backcolor" name="backcolor" value="orange">Orange</label>
+</div>
+<div class="radio">
+  <label><input type="radio" [(ngModel)]="backcolor" name="backcolor" value="yellow">Yellow</label>
+</div>
+<div class="radio">
+  <label><input type="radio" [(ngModel)]="backcolor" name="backcolor" value="white">White</label>
+</div>

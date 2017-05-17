@@ -22,4 +22,6 @@ Ellas son:
 - first 
 - last 
 - even 
-- odd 
+- odd
+
+Documentación oficial: [Angular](https://angular.io/docs/ts/latest/api/#!?status=stable&type=directive)

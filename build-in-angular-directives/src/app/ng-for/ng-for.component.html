@@ -1,0 +1,17 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Index</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Odd</th>
+      <th>Even</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of numbers; let i = index; let f = first;let l = last;let o = odd;let e = even">
+      <td>{{item}}</td><td>{{i}}</td><td>{{f}}</td><td>{{l}}</td><td>{{o}}</td><td>{{e}}</td>
+    </tr>
+  </tbody>
+</table>

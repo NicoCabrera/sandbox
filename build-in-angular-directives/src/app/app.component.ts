@@ -6,22 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
-  hidden:boolean;
-  unknow:any;
-  numbers:number[];
+  title = 'Angular build-in directives';
 
   constructor() {
-    this.hidden=false;
-    // this.unknow = "knowed!";    <----------------- El modelo sigue siendo 'undefined'. Por lo que no se mostrará
-    this.numbers = [1,2,3,4,5,6,7,8,9,10];
   }
 
-
-
-  changeValue(){
-    this.hidden = !this.hidden;
-  }
 }
 
 
